@@ -6,7 +6,11 @@ namespace lab2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            //int  a = int.Parse(napis);
+            int suma = a + b;
+            Console.WriteLine(suma);
         }
     }
 }
