@@ -6,24 +6,17 @@ namespace lab2
     {
         static void Main(string[] args)
         {
-            long allSum=0;
-            while (true)
+            int a;
+            int b;
+            int sum = 0;
+            var tab = Console.ReadLine().Split(' ');
+            a = int.Parse(tab[0]);
+            b = int.Parse(tab[1]);
+            for(int i=a; i<=b; i++)
             {
-                long partSum=0;
-                string line = Console.ReadLine();
-                if(line == null || line == string.Empty)
-                {
-                    break;
-                }
-                var tab = line.Split(' ');
-                foreach (var number in tab)
-                {
-                    partSum += long.Parse(number);
-                }
-                allSum += partSum;
-                Console.WriteLine(partSum);
+                sum += i * i;
             }
-            Console.WriteLine(allSum);
+            Console.WriteLine(sum);
         }
     }
 }
