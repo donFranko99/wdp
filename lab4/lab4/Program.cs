@@ -18,19 +18,14 @@ namespace lab4
 
             for (int i = 0; i < firstLength; i++)
             {
-                bool found = false;
                 for (int j = 0; j < secondLength; j++)
                 {
                     if (firstTable[i] == secondTable[j])
                     {
-                        found = true;
+                        controlTable[counter] = firstTable[i];
+                        counter++;
                         continue;
                     }
-                }
-                if (!found)
-                {
-                    controlTable[counter] = firstTable[i];
-                    counter++;
                 }
             }
             for (int i = 0; i < counter; i++)
